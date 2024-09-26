@@ -1,0 +1,29 @@
+# 1. Crear un Diccionario con la información proporcionada
+informacion_personal = {
+    "nombre": "Luis Zambrano",
+    "edad": 44,
+    "ciudad": "Quito",
+    "profesion": "Ingeniero en Telecomunicaciones",
+    "telefono": "052680333"
+}
+
+# 2. Acceder y Modificar Valores
+# Acceder al valor de la clave "ciudad"
+ciudad_actual = informacion_personal["ciudad"]
+print(f"Ciudad actual: {ciudad_actual}")
+
+# Modificar el valor de la clave "ciudad"
+informacion_personal["ciudad"] = "Pedernales"
+
+# 3. Verificar Existencia de Claves
+if "telefono" not in informacion_personal:
+    # Si no existe, agregar la clave "telefono"
+    informacion_personal["telefono"] = "052680333"  # Este caso no se ejecutará ya que ya existe
+
+# 4. Eliminar una Clave
+if "edad" in informacion_personal:
+    del informacion_personal["edad"]  # Eliminar la clave "edad"
+
+# 5. Imprimir el Diccionario Final
+print("Información Personal Final:")
+print(informacion_personal)
